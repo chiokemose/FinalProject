@@ -1,0 +1,55 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+/*Bumped down the Jumbotron Image*/
+/*body {
+  padding-top: 70px;
+}*/
+
+.jumbotron {
+    position: relative;
+    background: url("../Photos/Portugal Train.jpeg") center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+  font-size: 80px;
+  text-shadow: 0px 0px 5px black;
+  text-align: center;
+  color: #03C9A9;
+}
+.jumbotron h2 {
+  color: white;
+  text-shadow: 2px 2px gray;
+  font-size: 30px;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.btn {
+  margin-left: 25%;
+}
+
+.location {
+  text-align: center;
+}
+.fotorama{
+  height: 250px;
+}
+.travelExplanation {
+  height: 150px;
+}
+.travelDescription {
+  text-align: center;
+  color: gray ;
+}

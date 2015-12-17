@@ -2,9 +2,11 @@
  * Globals
  */
 
+
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
+  font-family: 'Open Sans', sans-serif;
+  color: #191919;
+  /*background-color: #F6F6F6;*/
 }
 
 h1, .h1,
@@ -14,11 +16,14 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   color: #333;
 }
 
+.row {
+  background-color: white;
+}
 
 /*
  * Override Bootstrap's default container.
@@ -80,8 +85,9 @@ h6, .h6 {
 
 .blog-header {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 55px;
 }
+
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -104,9 +110,20 @@ h6, .h6 {
 }
 
 /* Sidebar modules for boxing content */
+
+.blog-sidebar {
+  float: right;
+  /*position: absolute;*/
+}
+
+.blog-sidebar.affix {
+    right:70px;        
+}
+
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
+
 }
 .sidebar-module-inset {
   padding: 15px;
@@ -119,6 +136,16 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
+/*Accordian - Expand Blog Post*/
+.extraText {
+  display: none;
+}
+
+.expandText {
+  color: #FFB635;
+  font-weight: bold;
+  font-size: 16px;
+}
 
 /* Pagination */
 .pager {
@@ -155,7 +182,7 @@ h6, .h6 {
  */
 
 .blog-footer {
-  padding: 40px 0;
+  padding: 25px 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;

@@ -3,15 +3,134 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+  padding-bottom: 50px;
+  /*color: #5a5a5a;*/
+}
+/*Heading & Font-Pair*/
+@font-face {
+font-family: FrancoisOne;
+src: 
+  url(fonts/francoisone/FrancoisOne.ttf);
 }
 
-.btn-primary {
-  background-color: #BADA55;
+@font-face {
+  font-family: Open Sans;
+ src: 
+  url(fonts/opensans/OpenSans-Light.ttf);
 }
+
+@font-face {
+  font-family: Open Sans Semi-Bold;
+ src: 
+  url(fonts/opensans/OpenSans-Semibold.ttf);
+}
+
+
+h1 {
+  font-size: 70px;
+  font-family: 'FrancoisOne';
+  font-weight: 400;
+  color: #03C9A9;
+}
+h2 {
+  font-size: 30px;
+  font-family: 'FrancoisOne', sans-serif;
+  color: #03C9A9;
+}
+h3 {
+  font-family: 'OpenSans-Semibold', serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 24px;
+  color: #03C9A9;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.lead {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-pills {
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+.nav-pills > li > a {
+  font-family: 'OpenSans-Semibold', serif;
+  font-size: 20px;
+  font-style: bold;
+  color: #02977f;
+}
+
+.nav-pills > li {
+  padding-right: 5px;
+}
+
+.nav-pills center-block {
+    padding-left: 50px;
+}
+
+.btn-default {
+  background-color: #F30009;
+  color: white;
+  font-family: 'FrancoisOne', sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-default:hover {  
+  background-color: #BB0016;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+/* NavBar for Travel, Blog and Resume Page */
+
+/*makes it centered*/
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-size: 20px;
+  font-family: 'OpenSans-Semibold', sans-serif;
+  font-weight: bold; 
+}
+.navbar-default {
+  background-color: white;
+  border-color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: white;
+  color: #FEA200;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: 'OpenSans-Semibold', serif;
+  font-size: 25px;
+  font-style: bold;
+  color: #F3001C;
+}
+/*a:active {
+  color: black;
+}*/
+a:link {
+  color: #BB0016;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -38,28 +157,40 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+/* To bump the padding on the header/carousel */
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  height: 450px;
+  margin-bottom: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  position: center;
+/*  right: 15%
+  left: 15%;*/
+}
+
+.carousel-caption h1 {
+  text-shadow: 2px 2px gray;
+}
+
+.carousel-caption h2 {
+  text-shadow: 2px 2px gray;
+  color: white;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
-  background-color: #777;
+  height: 450px;
+  /*background-color: #777;*/
 }
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
 }
 
 
@@ -68,7 +199,7 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
 }
 .marketing h2 {
@@ -78,13 +209,18 @@ body {
   margin-right: 10px;
   margin-left: 10px;
 }
+/* Specific to HomePage
+------------------------- */
+.lead {
+  font-size: 16px;
+}
 
 
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 45px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -92,6 +228,11 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  margin-top: 0px;
+}
+.featurette-heading > a {
+  color: #03C9A9;
+  text-transform: uppercase;
 }
 
 .extra {
@@ -134,6 +275,6 @@ body {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 0px;
   }
 }
